@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="INDEX.css">
+    <title>INICIO DE SESIÓN</title>
+    <script src="https://kit.fontawesome.com/d6226df43c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="Naver_Line_Webtoon_logo.ico">
+</head> 
+
+<body>
+
+<header class="header"> 
+        <div class="logo">
+        <a href="INDEXBIEN.html">
+            <img class="imagenlogo" src="LOGO.png" alt="WEBTOON">
+        </a>
+        </div>  
+   
+        
+    <div class="navbar">
+
+        <ul class="barra">
+
+            <li class="ORIGINALES">
+             <a href="ORIGINALES BIEN.html"> ORIGINALES</a>
+            </li>
+            
+            <li class="GENEROS"> 
+             <a href="GENEROS.html">GÉNEROS</a>
+            </li>
+            
+            <li class="POPULARES">
+             <a href="POPULARES.html">MEDIA</a>   
+            </li> 
+            <i style="padding-left: 200px;" class="fa-solid fa-circle-user fa-1x"></i>
+            <button id="btn1" type="button"><a href="">Iniciar Sesión</a></button>
+        
+        
+        </ul>
+        
+    </div>    
+
+       
+</div>
+</header>
+
+    <div class="formulario">
+        <form action="" name="formulario" method="get">
+            <div class="titulo">INICIAR SESIÓN</div>
+            
+            <div>
+                <label for="nombreDeUsuario">Nombre de Usuario</label>
+                <i class="fas fa-user"></i>
+
+                <input type="text" name="username" id="nombre" placeholder="Juan Perez">
+
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+            </div>
+
+            <div>
+                <label for="correoElectronico">Correo Electrónico</label>
+                <i class="far fa-envelope"></i>
+            
+            <input type="text" name="email" id="correo" placeholder="juanperez@gmail.com">
+
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+       
+            <div class="error"></div>
+        </div>
+
+        
+        <div>
+            <label for="password">Contraseña</label>
+            <i class="fa fa-solid fa-lock"></i>
+            <input type="text" name="password" id="contasena"placeholder="Ingrese contraseña" >
+
+        
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+    <div class="error"></div>
+    </div>
+
+    <button id="btn" type="submit">Enviar</button>
+        
+    </div>
+    </form>
+    <script>
+       
+        (function(){
+                var formulario = document.getElementsByName('formulario')[0],
+                elementos = formulario.elements,
+                boton = document.getElementById('btn');
+
+            var validarNombre = function(e){
+                if (formulario.nombre.value == 0){
+                    alert("Ingrese su nombre");
+                    e.preventDefault();
+                   }
+            };
+
+            var validarText = function(e){
+                if (formulario.contrasena.value == 0 ){
+                    alert("Escribe la contraseña");
+                }
+            };
+            
+            var validarText = function(e){
+                if (formulario.correo.value == 0){
+                    alert("Ingrese su mail");
+                    e.preventDefault();
+                }
+            };
+
+            var validar = function(e){
+                validarNombre(e);
+                validarRadio(e);
+                validarCheckbox(e);
+            };
+            formulario.addEventListener("submit", validar);
+        }())
+  
+    </script>
+
+</form>
+    <footer>
+        <div class="pie">
+            <ul>
+            <li><i class="fa-brands fa-instagram fa-3x"></i></li>
+            <li><i class="fa-brands fa-youtube fa-3x"></i></li>
+            <li><i class="fa-brands fa-google-play fa-3x"></i></li>
+        </ul>
+        <p> ⓒ WEBTOON Entertainment Inc.
+            Tax ID : 81-3830533Address : 5700 Wilshire Blvd. Suite 220 Los Ángeles, CA 90036, EE.UU.
+            E-mail : ayuda@webtoon.comTel : (001) 323-297-3406</p>
+        </div>
+    </footer>
+
+</body>
+</html>

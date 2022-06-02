@@ -1,0 +1,1706 @@
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    width: 100%;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    margin: 0;
+}
+
+header{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    
+}
+
+header{
+    display: inline-grid;
+    grid-template-columns: repeat(4, 100%);
+    grid-template-rows: repeat(1, 100%);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+.logo{
+    grid-column: 1/1;
+    grid-row: 1;
+  }
+
+a.inicio{
+    width: 10px;
+    height: 50px;
+    display: grid;
+    align-items: left;
+    justify-items: left;
+    justify-content: left;
+}  
+
+.navbar {
+    grid-column: 2/1;
+    grid-row: 1;
+  }
+
+header > .fa-book-open{
+     grid-column: 2/2;
+     grid-row: 1;
+ } 
+
+h1{
+    width: 100%;
+    display: grid;
+}
+
+.logo{
+    float: left;
+    width: 100%;
+    display: grid;
+    margin: 2px 10px 0px 1px ;
+/*aca esta el margen para que el logo quede bien posicionado*/
+}
+
+
+.imagenlogo{
+    width: 6.8vw;
+    height: 6.8vw;
+    display: grid;
+    padding: 0.9px 0px 0px 11px;
+}
+
+li, ul{
+    list-style-type: none;
+    display: inline-table;
+    padding-top: 0.3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-left: 3vw;
+}
+
+ul.barra, li.barra{
+    max-width: 100%;
+    position: absolute;
+    display: block;
+    padding-left: 7%;
+    margin-top: 24px;
+    font-size: 1.5vw;
+} 
+
+.navbar{ 
+    position: relative;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%; 
+    display: relative;
+}
+
+
+.navbar.barra{
+    padding: 0px 0 0 0px;
+    width: relative;
+    height: relative;
+    display: grid;
+    position: relative;
+
+}   
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    text-decoration: none;
+    color: #00dc64;
+}
+
+#btn1{
+        margin-top: 0px;
+        width: 140px;
+        height: 35px;
+        background-color: #ffffff;
+        border: 2px solid #eaeaea;
+        border-radius: 100px;
+        color: #00dc64;
+        cursor: pointer;
+        font-size: 15px;
+        transition: all 0.2s ease;
+        grid-column: 4;
+        grid-row: 1;
+}
+
+#btn1:hover{
+    background-color: #00dc64;
+    color: #000;
+}
+
+.contenidos{
+    display: block;
+    max-width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.banner_principal{
+display: grid;
+max-width: 100%;
+height: 492px;
+background-image: url(home_bg013.jpg);
+background-size: cover;
+grid-column: 1/1;
+grid-row: 1/2;
+}
+
+.banner_principal_dentro{
+position: relative;
+width: 1020px;
+max-width: 100%;
+height: 492px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+display: grid;
+grid-column: 1/2;
+
+}
+
+.banner_largo{
+    display: grid;
+    position: relative;
+    max-width: 100%;
+    height: 492px;
+    grid-column: 1/1;
+    grid-row: 1/2;
+}
+
+.banner_largo .slider{
+    display: grid;
+    position: relative;
+    width: 943px;
+    height: 492px;
+    grid-column: 1/1;
+    grid-row: 2;
+}
+
+.position{
+    display: grid;
+    position: relative;
+    max-width: 100%;
+    height: 492px;
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+.banner_largo .slider{
+    background-image: url(BANNER/SERIE\ 1.png) ;
+    animation-iteration-count: infinite;
+    animation-name: animate;
+    animation-duration: 45s;
+    animation-delay: 8s;
+    display: grid;
+    position: relative;
+    max-width: 100%;
+    grid-column: 1/1;
+    grid-row: 1;
+}
+
+.botones_inicio{
+    display: grid;
+    max-width: 100%;
+
+}
+
+@keyframes animate {
+    0%, 10%{
+        background-image: url(BANNER/SERIE\ 10.png);
+        animation-delay: 04s;
+        animation-duration: 2s;
+        
+    }
+
+    10%, 20%{
+        background-image: url(BANNER/SERIE\ 9.png);
+        animation-delay: 8s;
+        animation-duration: 5s;
+    }
+
+    20%, 30%{
+        background-image: url(BANNER/SERIE\ 8.png);
+        background-size: cover;
+        animation-delay: 8s;
+        animation-duration: 5s;
+    }
+
+    30%, 40%{
+        background-image: url(BANNER/SERIE\ 7.png);
+        background-size: cover;
+        animation-delay: 8s;
+        animation-duration: 5s;
+    }
+
+    40%, 50%{
+        background-image: url(BANNER/SERIE\ 6.png);
+        background-size: cover;
+        animation-duration: 5s;  
+        animation-delay: 08s;
+    }
+
+    50%, 60%{
+        background-image: url(BANNER/SERIE\ 5.gif);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+        
+    }
+
+    60%, 70%{
+        background-image: url(BANNER/SERIE\ 4.png);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+    }
+    
+    70%, 80%{
+        background-image: url(BANNER/SERIE\ 3.png);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+    }
+
+    80%, 90%{
+        background-image: url(BANNER/SERIE\ 2.png);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+    }
+
+    90%, 100%{
+        background-image: url(BANNER/SERIE\ 11.png);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+    }
+
+    100%, 0%{
+        background-image: url(BANNER/SERIE\ 1.png);
+        animation-size: cover;
+        animation-delay: 04s;
+        animation-duration: 3s;
+
+    }
+}
+
+.grilla_series{
+    padding-top: 20px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.grilla_series > div {
+    background-color: #00dc64;
+    max-width: 100%;
+}
+
+div.banner_chico1 {
+    z-index: 4;
+    position: relative;
+    top: -261px;
+    right: 30px;
+    max-width: 100%;
+    height: 233px;
+    grid-row: 1;
+    grid-column: 1;
+    padding-left: 970px;
+
+}
+
+div.banner_chico2{
+    z-index: 1;
+    position: relative;
+    top: -687px;
+    right:30px;
+    left:px;
+    max-width: 100%;
+    width: 314px;
+    height: 208px;
+    padding-left: 940px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.series_diarias{
+    display: -ms-inline-grid;
+    width: 1400px;
+    height: 645px;
+}
+
+.barra_dias{
+    background-color: #ffffff;
+    display: grid;
+    margin-top: -442px;
+    max-width: 100%;
+    border-bottom: 2px solid #eaeaea ;
+}
+
+
+
+.grilla_series{
+    background-color: #f4f4f4;
+    max-width: 100%;
+    height: 580px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+.grilla_series {
+    display: grid;
+    grid-template-columns: repeat(5 , 210px);
+    grid-template-rows: repeat(2 , 210px);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    }
+
+
+
+.item{
+      max-width: 100% ;
+      display: grid;
+      background-size: cover;
+
+  }
+
+.item h5{
+    color: rgba(255, 255, 255, 0);
+    padding-left: 0px;
+    max-width: 100%;
+    text-align: justify;
+    display: grid;
+}
+.item h5, .item h3{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    display: inline;
+    text-align: left;
+}  
+
+
+.item:hover, .item:active{
+  cursor: pointer;
+  background: none;
+  background-color: #fd337f;
+  transition: 0.3s;
+  transition-timing-function: ease;
+}
+
+.item h5:hover,.item h5:active{
+    color: #ffffff;
+}
+
+
+  .item1{
+    grid-column: 1 / 1;
+    grid-row: 1;
+    background-image: url(/NOVELAS/62.jpg);
+  }
+  .item2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+    background-image: url(/NOVELAS/4Te-encontreCC81_desktop_promobanner.jpg);
+  }
+  .item3 {
+    grid-column: 4/4;
+    grid-row: 1/ 1;
+    background-image: url(/NOVELAS/3TeenageMercenary_desktop_thumbnail.jpg);
+  }
+  .item4 {
+    grid-column: 5;
+    grid-row: 1;
+    background-image: url(/NOVELAS/2\ \(1\).jpg);
+
+  }
+  .item5 {
+    grid-column: 1/2;
+    grid-row: 2;
+    background-image: url(/NOVELAS/22.jpg);
+  }
+  .item6{
+    grid-column: 2/2;
+    grid-row: 2;
+    background-image: url(/NOVELAS/5ThePrenup_thumbnail_desktop.jpg);
+  }
+  .item7 {
+    grid-column: 3;
+    grid-row: 2;
+    background-image: url(/NOVELAS/4Time_Ex_desktop_thumbnail.jpg);
+  }
+  .item8 {
+    grid-column: 4;
+    grid-row: 2;
+    background-image: url(/NOVELAS/6La+primera+noche+con+el+duque_Launch_desktop_thumbnail.jpg);
+  }
+  .item9{
+    grid-column: 5;
+    grid-row: 2;
+    background-image: url(/NOVELAS/2.jpg);
+  }
+
+  .footer{
+    display: grid;
+    height: 100px;
+    padding-bottom: 0%;
+    max-width: 100%;
+    background-color: #00dc64;
+    margin-top: 100px;
+}
+
+footer{
+    height: 150px;
+    max-width: 100%;
+    background-color: #000;
+    display: inline;
+}
+
+.fa-brands, li.pie, .pie{
+    color: #00dc64;
+    display: grid;
+    justify-items: center;
+
+}
+
+.pie p{
+    font-size: smaller;
+    color: #b9b9b9;
+    display: grid;
+    justify-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    padding: 50px;
+}
+
+.titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 25px;
+
+}
+
+.formulario div input{
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #00dc64;
+    padding: 0 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulario div{
+    margin-bottom: 15px;
+    position: relative;
+    
+}
+
+input:focus{
+    border: 2px solid #00dc64;
+}
+
+.formulario div i{
+    position: absolute;
+    margin-top: -20px;
+}
+
+.failure.icon, .error{
+    color: red;
+}
+
+.success-icon{
+    color: #3eff95;
+}
+
+.error{
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+
+.failure.icon, .success-icon{
+    right: 0;
+    opacity: 0;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+#btn{
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: #00dc64;
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.2s ease;
+
+}
+
+@media screen and (max-width:768px) {
+    
+    html{
+        max-width: 768px
+    }
+    
+    li, ul{
+        list-style-type: none;
+        display: inline;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    ul.barra, li.barra{
+        width: 768px;
+        max-width: 768px;
+        max-width: 100%;
+        display: inline;
+        padding-left: 20px;
+        margin-top: 14px;
+        margin-left: 30px;
+        font-size: 1.5vw;
+    } 
+
+    .banner_principal_dentro{
+        visibility: visible;
+    }
+    .banner_largo{
+        width: 768px;
+        height: 100px;
+        max-width: 768px;
+        max-width: 100%;
+        visibility: visible;
+    }
+    .header{
+        max-width: 768px;
+        max-width: 100%;
+        width: 768px;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(1, auto);
+        border-bottom: 1px solid #f4f4f4;
+        font-size: 8px;
+        z-index: 1;
+    }
+
+    .navbar{
+        max-width: 768px;
+        max-width: 100%;
+        display: grid;
+        width: 768px;
+    }
+
+    .logo{
+        grid-column: 1/1;
+        grid-row: 1;
+      }
+    
+    a.inicio{
+        max-width: 768px;
+        max-width: 100%;
+        width: 768px;
+        display: inline;
+        align-items: left;
+        justify-items: left;
+        justify-content: left;
+    }  
+    
+    h1{
+        max-width: 768px;
+        max-width: 100%;
+        width: 768px;
+        display: grid;
+    }
+    
+    .logo{
+        max-width: 768px;
+        max-width: 100%;
+        float: left;
+        width: 768px;
+        display: grid;
+        margin: 2px 0px 0px 1px ;
+    /*aca esta el margen para que el logo quede bien posicionado*/
+    }
+    
+    
+    .imagenlogo{
+        display: grid;
+        max-width: 768px;
+        max-width: 100%;
+        padding: 0.9px 0px 0px 11px;
+    }   
+    
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:hover, a:active{
+        text-decoration: none;
+        color: #00dc64;
+    }
+        
+    #btn1{
+        max-width: 768px;
+        max-width: 100%;
+        width: 80px;
+        height: 20px;
+        background-color: #ffffff;            border: 1px solid #eaeaea;
+        border-radius: 100px;
+        color: #00dc64;
+        cursor: pointer;
+        font-size: 8px;
+        transition: all 0.2s ease;
+        }
+        
+        #btn1:hover{
+            background-color: #00dc64;
+            color: #000;
+        }
+        
+    .contenidos{
+        display: block; 
+        max-width: 768px;
+        position: relative;
+        height: 100%;
+        max-width: 768px;
+        max-width: 100%;
+        }
+        
+     .banner_principal{
+        display: grid;
+        width: 768px;
+        height: 342px;
+        max-width: 768px;
+        max-width: 100%;
+        background-image: url(home_bg013.jpg);
+        background-size: cover;
+        grid-column: 1/1;
+        grid-row: 1/2;
+        }
+        
+    .banner_principal_dentro{
+        position: relative;
+        width: 768px;
+        max-width: 768px;
+        max-width: 100%;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: grid;
+        grid-column: 1/2;
+        
+        }
+        
+        .banner_largo{
+            display: grid;
+            position: relative;
+            width: 768px;
+            height: 240px;
+            max-width: 768px;
+            max-width: 100%;
+            grid-column: 1/1;
+            grid-row: 1/2;
+        }
+        
+        .banner_largo .slider{
+            display: grid;
+            position: relative;
+            width: 768px;
+            height: 240px;
+            max-width: 768px;
+            max-width: 100%;
+            grid-column: 1/1;
+            grid-row: 2;
+        }
+        
+        .position{
+            display: grid;
+            position: relative;
+            width:768px;
+            max-width: 768px;
+            max-width: 100%;
+            height: 240px;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        
+        .banner_largo .slider{
+            background-image: url(BANNER/SERIE\ 1.png) ;
+            animation-iteration-count: infinite;
+            animation-name: animate;
+            animation-duration: 45s;
+            animation-delay: 8s;
+            display: grid;
+            max-width: 768px;
+            max-width: 100%;
+            position: relative;
+            width: 768px;
+            height: 340px;
+            grid-column: 1/1;
+            grid-row: 1;
+            background-size: cover;
+        }
+        
+        
+        @keyframes animate {
+            0%, 10%{
+                background-image: url(BANNER/SERIE\ 10.png);
+                animation-delay: 04s;
+                animation-duration: 2s;
+                background-size: cover;
+                
+            }
+        
+            10%, 20%{
+                background-image: url(BANNER/SERIE\ 9.png);
+                animation-delay: 8s;
+                animation-duration: 5s;
+                background-size: cover;
+            }
+        
+            20%, 30%{
+                background-image: url(BANNER/SERIE\ 8.png);
+                animation-delay: 8s;
+                animation-duration: 5s;
+                background-size: cover;
+            }
+        
+            30%, 40%{
+                background-image: url(BANNER/SERIE\ 7.png);
+                background-size: cover;
+                animation-delay: 8s;
+                animation-duration: 5s;
+            }
+        
+            40%, 50%{
+                background-image: url(BANNER/SERIE\ 6.png);
+                background-size: cover;
+                animation-duration: 5s;  
+                animation-delay: 08s;
+            }
+        
+            50%, 60%{
+                background-image: url(BANNER/SERIE\ 5.gif);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+                
+            }
+        
+            60%, 70%{
+                background-image: url(BANNER/SERIE\ 4.png);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+            }
+            
+            70%, 80%{
+                background-image: url(BANNER/SERIE\ 3.png);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+            }
+        
+            80%, 90%{
+                background-image: url(BANNER/SERIE\ 2.png);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+            }
+        
+            90%, 100%{
+                background-image: url(BANNER/SERIE\ 11.png);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+            }
+        
+            100%, 0%{
+                background-image: url(BANNER/SERIE\ 1.png);
+                animation-size: cover;
+                animation-delay: 04s;
+                animation-duration: 3s;
+        
+            }
+        }
+        
+        .grilla_series{
+            padding-top: 20px;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        
+        .grilla_series > div {
+            background-color: #00dc64;
+            max-width: 100%;
+            width: 768px;
+
+        }
+        
+        div.banner_chico1 {
+            max-width: 0px;
+            max-width: 0%;
+            width: 0px;
+            visibility: hidden;
+        
+        }
+        
+        div.banner_chico2{
+            visibility: hidden;
+            max-width: 0px;
+            max-width: 0%;
+            width: 0px;
+        }
+        
+        .series_diarias{
+            display: -ms-inline-grid;
+            width: 768px;
+            max-width: 768px;
+            max-width: 100%;
+        }
+
+        ul.semana{
+            margin-left: -2px;
+        }
+        
+        .barra_dias{
+            background-color: #ffffff;
+            display: grid;
+            height: 50x;
+            width: 768px;
+            max-width: 768px;
+            max-width: 100%;
+            font-size: 15px;
+            border-bottom: 2px solid #eaeaea ;
+        }
+
+        .grilla_series{
+            background-color: #f4f4f4;
+            width: 768px;
+            height: 300px;
+            position: relative;
+            display: grid;
+            max-width: 100%;
+            justify-content: center;
+        }
+
+    .grilla_series {
+        display: grid;
+        grid-template-columns: repeat(5, 140px);
+        grid-template-rows: repeat(2, 140px);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+      }
+    
+    
+    
+    .item{
+          max-width: 100%;
+          display: grid;
+          background-size: cover;
+    
+      }
+    
+    .item h5{
+        color: rgba(255, 255, 255, 0);
+        padding-left: 0px;
+        max-width: 100%;
+        text-align: justify;
+        display: grid;
+    }
+    .item h5, .item h3{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 8px;
+        display: inline;
+        text-align: left;
+    }  
+    
+    
+    .item:hover, .item:active{
+      cursor: pointer;
+      background: none;
+      background-color: #fd337f;
+      transition: 0.3s;
+      transition-timing-function: ease;
+    }
+    
+    .item h5:hover,.item h5:active{
+        color: #ffffff;
+    }
+    
+    
+      .item1{
+        grid-column: 1 / 1;
+        grid-row: 1;
+        background-image: url(/NOVELAS/62.jpg);
+      }
+      .item2 {
+        grid-column: 2 / 4;
+        grid-row: 1 / 1;
+        background-image: url(/NOVELAS/4Te-encontreCC81_desktop_promobanner.jpg);
+      }
+      .item3 {
+        grid-column: 4/4;
+        grid-row: 1/ 1;
+        background-image: url(/NOVELAS/3TeenageMercenary_desktop_thumbnail.jpg);
+      }
+      .item4 {
+        grid-column: 5;
+        grid-row: 1;
+        background-image: url(/NOVELAS/2\ \(1\).jpg);
+    
+      }
+      .item5 {
+        grid-column: 1/2;
+        grid-row: 2;
+        background-image: url(/NOVELAS/22.jpg);
+      }
+      .item6{
+        grid-column: 2/2;
+        grid-row: 2;
+        background-image: url(/NOVELAS/5ThePrenup_thumbnail_desktop.jpg);
+      }
+      .item7 {
+        grid-column: 3;
+        grid-row: 2;
+        background-image: url(/NOVELAS/4Time_Ex_desktop_thumbnail.jpg);
+      }
+      .item8 {
+        grid-column: 4;
+        grid-row: 2;
+        background-image: url(/NOVELAS/6La+primera+noche+con+el+duque_Launch_desktop_thumbnail.jpg);
+      }
+      .item9{
+        grid-column: 5;
+        grid-row: 2;
+        background-image: url(/NOVELAS/2.jpg);    
+      }
+
+        footer{
+            padding-top: 50px;
+            height: 200px;
+            width: 768px;
+            max-width: 768px;
+            max-width: 100%;
+            background-color: #000;
+        }
+        
+        .fa-brands, li.pie, .pie, i.fa-brands{
+            color: #00dc64;
+            padding-left: 30px;
+            display: inline;
+            width: 768px;
+            max-width: 768px;
+            max-width: 100%;
+            align-content: center;
+        
+        }
+        
+        .pie p{
+            margin: 0;
+            font-size: smaller;
+            color: #b9b9b9;
+            display: grid;
+            width: 480px;
+            align-items: center;
+            padding-top: 10px;
+            max-width: 480px;
+            max-width: 100%;
+        }
+        
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 400px;
+            padding: 20px;
+            max-width: 480px;
+            max-width: 100%;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 25px;
+        
+        }
+        
+        .formulario div input{
+            margin: 0px;
+            width: 768px;
+            height: 40px;
+            border-radius: 8px;
+            border: 2px solid #00dc64;
+            padding: 0 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 768px;
+            max-width: 100%;
+        }
+        
+
+        .formulario div{
+            margin-bottom: 15px;
+            position: relative;
+            max-width: 768px;
+            max-width: 100%;
+            
+        }
+        
+        input:focus{
+            border: 2px solid #00dc64;
+        }
+        
+        .formulario div i{
+            margin-top: -20px;
+            max-width: 768px;
+            max-width: 100%;
+        }
+        
+        .failure.icon, .error{
+            color: red;
+        }
+        
+        .success-icon{
+            color: #3eff95;
+        }
+        
+        .error{
+            font-size: 14.5px;
+            margin-top: 5px;
+        }
+        
+        .failure.icon, .success-icon{
+            right: 0;
+            opacity: 0;
+        }
+        
+        button:hover{
+            opacity: 0.8;
+        }
+        
+        #btn{
+            margin-top: 15px;
+            width: 468px;
+            height: 30px;
+            background-color: #00dc64;
+            border: 2px solid #eaeaea;
+            border-radius: 8px;
+            max-width: 100%;
+            max-width: 768px;
+            color: #000;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.2s ease; 
+        }
+}
+
+
+/* -------------------------- */
+
+@media screen and (max-width:480px) {
+    
+    html{
+        max-width: 480px
+    }
+    
+    li, ul{
+        list-style-type: none;
+        display: inline;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    ul.barra, li.barra{
+        width: 400px;
+        max-width: 480px;
+        max-width: 100%;
+        display: inline;
+        padding-left: 2px;
+        margin-top: 4px;
+        margin-left: 30px;
+        font-size: 1.5vw;
+    } 
+
+    .banner_principal_dentro{
+        visibility: visible;
+    }
+    .banner_largo{
+        width: 480px;
+        height: 100px;
+        max-width: 480px;
+        max-width: 100%;
+        visibility: visible;
+    }
+    .header{
+        max-width: 480px;
+        max-width: 100%;
+        width: 480px;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(1, auto);
+        border-bottom: 1px solid #f4f4f4;
+        font-size: 8px;
+        z-index: 1;
+    }
+
+    .navbar{
+        max-width: 480px;
+        max-width: 100%;
+        display: grid;
+        width: 400px;
+    }
+
+    .logo{
+        grid-column: 1/1;
+        grid-row: 1;
+      }
+    
+    a.inicio{
+        max-width: 480px;
+        max-width: 100%;
+        width: 480px;
+        display: inline;
+        align-items: left;
+        justify-items: left;
+        justify-content: left;
+    }  
+    
+    h1{
+        max-width: 480px;
+        max-width: 100%;
+        width: 480px;
+        display: grid;
+    }
+    
+    .logo{
+        max-width: 480px;
+        max-width: 100%;
+        float: left;
+        width: 480px;
+        display: grid;
+        margin: 2px 0px 0px 1px ;
+    /*aca esta el margen para que el logo quede bien posicionado*/
+    }
+    
+    
+    .imagenlogo{
+        display: grid;
+        max-width: 480px;
+        max-width: 100%;
+        padding: 0.9px 0px 0px 11px;
+    }   
+    
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:hover, a:active{
+        text-decoration: none;
+        color: #00dc64;
+    }
+        
+    #btn1{
+        max-width: 480px;
+        max-width: 100%;
+        width: 80px;
+        height: 20px;
+        margin-left: -100px;
+        background-color: #ffffff;            border: 1px solid #eaeaea;
+        border-radius: 100px;
+        color: #00dc64;
+        cursor: pointer;
+        font-size: 8px;
+        transition: all 0.2s ease;
+        }
+        
+        #btn1:hover{
+            background-color: #00dc64;
+            color: #000;
+        }
+        
+    .contenidos{
+        display: block; 
+        max-width: 480px;
+        position: relative;
+        height: 100%;
+        max-width: 480px;
+        max-width: 100%;
+        }
+        
+     .banner_principal{
+        display: grid;
+        width: 480px;
+        height: 240px;
+        max-width: 480px;
+        max-width: 100%;
+        background-image: url(home_bg013.jpg);
+        background-size: cover;
+        grid-column: 1/1;
+        grid-row: 1/2;
+        }
+        
+    .banner_principal_dentro{
+        position: relative;
+        width: 480px;
+        max-width: 480px;
+        max-width: 100%;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: grid;
+        grid-column: 1/2;
+        
+        }
+        
+        .banner_largo{
+            display: grid;
+            position: relative;
+            width: 480px;
+            height: 240px;
+            max-width: 480px;
+            max-width: 100%;
+            grid-column: 1/1;
+            grid-row: 1/2;
+        }
+        
+        .banner_largo .slider{
+            display: grid;
+            position: relative;
+            width: 480px;
+            height: 240px;
+            max-width: 480px;
+            max-width: 100%;
+            grid-column: 1/1;
+            grid-row: 2;
+        }
+        
+        .position{
+            display: grid;
+            position: relative;
+            width: 480px;
+            max-width: 480px;
+            max-width: 100%;
+            height: 240px;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        
+        .banner_largo .slider{
+            background-image: url(BANNER/SERIE\ 1.png) ;
+            animation-iteration-count: infinite;
+            animation-name: animate;
+            animation-duration: 45s;
+            animation-delay: 8s;
+            display: grid;
+            max-width: 480px;
+            max-width: 100%;
+            position: relative;
+            width: 480px;
+            height: 240px;
+            grid-column: 1/1;
+            grid-row: 1;
+            background-size: cover;
+        }
+        
+        
+        @keyframes animate {
+            0%, 10%{
+                background-image: url(BANNER/SERIE\ 10.png);
+                animation-delay: 04s;
+                animation-duration: 2s;
+                background-size: cover;
+                
+            }
+        
+            10%, 20%{
+                background-image: url(BANNER/SERIE\ 9.png);
+                animation-delay: 8s;
+                animation-duration: 5s;
+                background-size: cover;
+            }
+        
+            20%, 30%{
+                background-image: url(BANNER/SERIE\ 8.png);
+                animation-delay: 8s;
+                animation-duration: 5s;
+                background-size: cover;
+            }
+        
+            30%, 40%{
+                background-image: url(BANNER/SERIE\ 7.png);
+                background-size: cover;
+                animation-delay: 8s;
+                animation-duration: 5s;
+            }
+        
+            40%, 50%{
+                background-image: url(BANNER/SERIE\ 6.png);
+                background-size: cover;
+                animation-duration: 5s;  
+                animation-delay: 08s;
+            }
+        
+            50%, 60%{
+                background-image: url(BANNER/SERIE\ 5.gif);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+                
+            }
+        
+            60%, 70%{
+                background-image: url(BANNER/SERIE\ 4.png);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+            }
+            
+            70%, 80%{
+                background-image: url(BANNER/SERIE\ 3.png);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+            }
+        
+            80%, 90%{
+                background-image: url(BANNER/SERIE\ 2.png);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+            }
+        
+            90%, 100%{
+                background-image: url(BANNER/SERIE\ 11.png);
+                background-size: cover;
+                animation-duration: 5s;
+                animation-delay: 08s;
+            }
+        
+            100%, 0%{
+                background-image: url(BANNER/SERIE\ 1.png);
+                animation-size: cover;
+                animation-delay: 04s;
+                animation-duration: 3s;
+        
+            }
+        }
+        
+        .grilla_series{
+            padding-top: 20px;
+            grid-row: 1;
+            grid-column: 1;
+        }
+        
+        .grilla_series > div {
+            background-color: #00dc64;
+            max-width: 100%;
+            width: 480px;
+
+        }
+        
+        div.banner_chico1 {
+            max-width: 0px;
+            max-width: 0%;
+            width: 0px;
+            visibility: hidden;
+        
+        }
+        
+        div.banner_chico2{
+            visibility: hidden;
+            max-width: 0px;
+            max-width: 0%;
+            width: 0px;
+        }
+        
+        .series_diarias{
+            display: -ms-inline-grid;
+            width: 480px;
+            max-width: 480px;
+            max-width: 100%;
+        }
+
+        ul.semana{
+            margin-left: -2px;
+        }
+        
+        .barra_dias{
+            background-color: #ffffff;
+            display: grid;
+            height: 45px;
+            width: 480px;
+            max-width: 480px;
+            max-width: 100%;
+            font-size: 12px;
+            border-bottom: 2px solid #eaeaea ;
+        }
+
+        .grilla_series{
+            background-color: #f4f4f4;
+            max-width: 480px;
+            height: 690px;
+            position: relative;
+            display: grid;
+            width: 480px;
+            max-width: 100%;
+            justify-content: center;
+        }
+        
+        .grilla_series {
+            display: grid;
+            grid-template-columns: repeat(1, 435px);
+            grid-template-rows: repeat(4, 160px);
+            row-gap: 10px;
+          }
+        
+        .item{
+            max-width: 100%;
+            width: 435px;
+            display: grid;
+        
+          }
+        
+        .item h5{
+            color: rgba(255, 255, 255, 0);
+            padding-left: 0px;
+            max-width: 480px;
+            max-width: 100%;
+            width: 435px;
+            text-align: justify;
+            display: grid;
+        }
+        .item h5, .item h3{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            display: inline;
+            text-align: left;
+            max-width: 480px;
+            max-width: 100%;
+        }  
+        
+        .item:hover, .item:active{
+          cursor: pointer;
+          background: none;
+          background-color: #fd337f;
+          transition: 0.3s;
+          transition-timing-function: ease;
+        }
+        
+        .item h5:hover,.item h5:active{
+            color: #ffffff;
+        }
+        
+        
+          .item1{
+            grid-column: 1/1;
+            grid-row: 1;
+            background-image: url(/BANNERRESPONSIVE/0MorganaYOz_promobanner_desktop.jpg);
+          }
+          .item2 {
+            grid-column: 1;
+            grid-row: 2 ;
+            background-image: url(/NOVELAS/4Te-encontreCC81_desktop_promobanner.jpg);
+          }
+          .item3 {
+            grid-column: 1;
+            grid-row: 3;
+            background-image: url(BANNERRESPONSIVE/6TDDUP_promobanner_desktop.jpg);
+          }
+          .item4 {
+            grid-column: 1;
+            grid-row: 4;
+            background-image: url(/BANNERRESPONSIVE/7ThePrenup_promobanner_desktop.jpg);
+          }
+          .item5 {
+            visibility: hidden;
+            grid-column: 1;
+            grid-row: 5;
+            background-image: url(/BANNERRESPONSIVE/image\ 2.jpg);
+         }
+          .item6{
+            visibility: hidden;
+            grid-column: 1;
+            grid-row: 6;
+            background-image: url(/NOVELAS/5ThePrenup_thumbnail_desktop.jpg);
+          }
+          .item7 {
+            grid-column: 1;
+            grid-row: 7;
+            visibility: hidden;
+            background-image: url(/NOVELAS/4Time_Ex_desktop_thumbnail.jpg);
+          }
+          .item8 {
+            visibility: hidden;
+            grid-column: 1;
+            grid-row: 8;
+            background-image: url(/NOVELAS/6La+primera+noche+con+el+duque_Launch_desktop_thumbnail.jpg);
+          }
+          .item9{
+            visibility: hidden;
+            grid-column: 1;
+            grid-row: 9;
+            background-image: url(/NOVELAS/2.jpg);
+          }
+        
+        footer{
+            padding-top: 50px;
+            height: 200px;
+            width: 480px;
+            max-width: 480px;
+            max-width: 100%;
+            background-color: #000;
+        }
+        
+        .fa-brands, li.pie, .pie, i.fa-brands{
+            color: #00dc64;
+            padding-left: 30px;
+            display: inline;
+            width: 400px;
+            max-width: 480px;
+            max-width: 100%;
+            align-content: center;
+        
+        }
+        
+        .pie p{
+            margin: 0;
+            font-size: smaller;
+            color: #b9b9b9;
+            display: grid;
+            width: 480px;
+            align-items: center;
+            padding-top: 10px;
+            max-width: 480px;
+            max-width: 100%;
+        }
+        
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 400px;
+            padding: 20px;
+            max-width: 480px;
+            max-width: 100%;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 25px;
+        
+        }
+        
+        .formulario div input{
+            margin: 0px;
+            width: 400px;
+            height: 40px;
+            border-radius: 8px;
+            border: 2px solid #00dc64;
+            padding: 0 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 480px;
+            max-width: 100%;
+        }
+        
+
+        .formulario div{
+            margin-bottom: 15px;
+            position: relative;
+            max-width: 480px;
+            max-width: 100%;
+            
+        }
+        
+        input:focus{
+            border: 2px solid #00dc64;
+        }
+        
+        .formulario div i{
+            margin-top: -20px;
+            max-width: 480px;
+            max-width: 100%;
+        }
+        
+        .failure.icon, .error{
+            color: red;
+        }
+        
+        .success-icon{
+            color: #3eff95;
+        }
+        
+        .error{
+            font-size: 14.5px;
+            margin-top: 5px;
+        }
+        
+        .failure.icon, .success-icon{
+            right: 0;
+            opacity: 0;
+        }
+        
+        button:hover{
+            opacity: 0.8;
+        }
+        
+        #btn{
+            margin-top: 15px;
+            width: 250px;
+            height: 30px;
+            background-color: #00dc64;
+            border: 2px solid #eaeaea;
+            border-radius: 8px;
+            max-width: 100%;
+            max-width: 480px;
+            color: #000;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.2s ease;
+        
+        }
+}   
+

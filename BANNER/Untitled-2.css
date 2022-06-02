@@ -1,0 +1,93 @@
+.position{
+    position: absolute;
+    width: 943px;
+    height: 492px;
+}
+
+.slider{
+    background-image: url(SERIE\ 1.png) ;
+    animation-iteration-count: infinite;
+    animation-name: animate;
+    animation-duration: 45s;
+    animation-delay: 8s;
+}
+
+@keyframes animate {
+    0%, 10%{
+        background-image: url(SERIE\ 10.png);
+        animation-delay: 04s;
+        animation-duration: 2s;
+        
+    }
+
+    10%, 20%{
+        background-image: url(SERIE\ 9.png);
+        animation-delay: 8s;
+        animation-duration: 5s;
+    }
+
+    20%, 30%{
+        background-image: url(SERIE\ 8.png);
+        background-size: cover;
+        animation-delay: 8s;
+        animation-duration: 5s;
+    }
+
+    30%, 40%{
+        background-image: url(SERIE\ 7.png);
+        background-size: cover;
+        animation-delay: 8s;
+        animation-duration: 5s;
+    }
+
+    40%, 50%{
+        background-image: url(SERIE\ 6.png);
+        background-size: cover;
+        animation-duration: 5s;  
+        animation-delay: 08s;
+    }
+
+    50%, 60%{
+        background-image: url(SERIE\ 5.gif);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+        
+    }
+
+    60%, 70%{
+        background-image: url(SERIE\ 4.png);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+    }
+    
+    70%, 80%{
+        background-image: url(SERIE\ 3.png);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+    }
+
+    80%, 90%{
+        background-image: url(SERIE\ 2.png);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+    }
+
+    90%, 100%{
+        background-image: url(SERIE\ 11.png);
+        background-size: cover;
+        animation-duration: 5s;
+        animation-delay: 08s;
+    }
+
+    100%, 0%{
+        background-image: url(SERIE\ 1.png);
+        animation-size: cover;
+        animation-delay: 04s;
+        animation-duration: 3s;
+
+    }
+}
